@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.head{
+    padding: 20px 10px;
+    margin: 10px 50px;
+    max-width: 100%;
+    max-height: 20%;
+    border: 1px solid;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+.nav{
+    padding: 20px 10px;
+    margin: 10px 50px;
+    max-width: 100%;
+    max-height: 20%;
+    border: 1px solid;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+
+}
+.left{
+    text-align: center;
+    margin-top: 20px;
+    border: 1px solid;
+    max-width: 310px;
+    height: 500px;
+}
+img{
+    align-self: center;
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
+}
+.main{
+    text-align: center;
+    margin-top: 20px;
+    border: 1px solid;
+    max-width: 560px;
+    height: 500px;
+}
+.right{
+    text-align: center;
+    margin-top: 20px;
+    border: 1px solid;
+    width: 310px;
+    height: 500px;
+}
+.body{
+    display: grid;
+    grid-template-columns: 350px 600px 350px;
+    padding-left: 50px;
+}
+
+@media (max-width: 1200px) {
+    .body {
+        grid-template-columns: 1fr;
+        padding-left: 20px;
+    }
+
+    .left, .right, .main {
+        max-width: 100%;
+        width: auto;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .head {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav h2 {
+        font-size: 1.5em;
+    }
+
+    .body {
+        grid-template-columns: 1fr;
+        padding-left: 10px;
+    }
+
+    .left, .right, .main {
+        margin-top: 10px;
+        height: auto;
+    }
+
+    .head {
+        padding: 10px 5px;
+        margin: 5px 10px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav h2 {
+        font-size: 1.2em;
+    }
+
+    .head {
+        padding: 5px 2px;
+        margin: 5px 2px;
+    }
+
+    .left, .right, .main {
+        margin-top: 5px;
+        height: auto;
+        max-width: 100%;
+    }
+
+    .body {
+        padding-left: 5px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
