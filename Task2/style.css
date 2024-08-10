@@ -1,0 +1,22 @@
+.accordions{
+    text-align: center;
+    
+}
+.head1{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    
+}
+.body1{
+    padding-top: 20px;
+    position: relative;
+    left: -1200px;
+    transition: all .1s;
+}
+.invert{
+    filter: invert(1);
+}
+.down{
+    display: none;
+}
