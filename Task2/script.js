@@ -14,7 +14,11 @@ function main(){
             arrow.setAttribute("src", "arrow-up.svg"); // Change the arrow direction
         }
     });
+
     
+    let box=document.querySelector(".box")
+    alert(box.innerHTML)
+    alert.style.margin="200px"
 
 }
 main()
